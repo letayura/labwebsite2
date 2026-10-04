@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спортивний клуб</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+    <nav class="nav">
+     <a href="#about">Про клуб</a>
+     <a href="#sports">Напрямки клубу</a>
+     <a href="#catalog">Спортсмени</a>
+     <a href="#add">Записатись</a>
+     <a href="#links">Корисні посилання</a>
+    </nav>
+    </header>
+
+    <main class="container">
+    <h1>Спортивний клуб</h1>
+     <p> <strong>Спортивний клуб</strong> — це заклад фізичної культури і спорту, який об'єднує спортсменів або любителів для тренувань, розвитку певних видів спорту та участі у змаганнях.</p>
+
+     <div class="sections">
+
+     <section id="about" class="section">
+    <h2>Напрямки клубу</h2>
+     <p>клуб об'єднує кілька секцій за видами спорту — від індивідуальних дисциплін до командних ігор, кожна зі своїм тренером і розкладом занять.</p>
+    <h3>Як обрати секцію?</h3>
+     <p>обирати секцію варто за віком і фізичною підготовкою учасника, а також метою занять — оздоровчі тренування чи підготовка до змагань.</p>
+    <h2>Спортсмени клубу</h2>
+     <p>кожен спортсмен клубу має власний розряд, якого досягає під час змагань, а результати виступів фіксуються в особистій картці.</p>
+    <h3>Розряди та досягнення</h3>
+     <p>розряди присвоюють за результатами офіційних змагань — від третього до першого, а найкращі спортсмени отримують статус рекордсмена клубу.</p>
+
+    <h2 id="sports">Напрямки спорту в клубі:</h2>
+    <ul>
+         <li>Плавання</li>    
+         <li>Єдиноборства</li>
+         <li>Теніс</li>
+         <li>Баскетбол</li>
+    </ul>
+
+    <h2>Порядок вступу до клубу:</h2>
+    <ol>
+         <li>Подати заявку та пройти медичний огляд</li>  
+         <li>Обрати секцію та тренера</li>
+         <li>Відвідати перше пробне заняття</li>
+         <li>Оформити членство та отримати розклад тренувань</li>
+    </ol>
+    </section>
+
+    <section id="catalog" class="section">
+   <img src="img/gym.jpg" alt="Тренажерний зал спортивного клубу">
+   <figure>
+    <img src="img/pool.jpg" alt="Плавальний басейн клубу">
+    <figcaption>Плавальний басейн клубу — тренування з плавання проходять тричі на тиждень</figcaption>
+   </figure>
+
+   <h2>Клуб</h2>
+<div class="table-wrapper">
+<table>
+  <caption>Учасники клубу</caption>
+  <thead>
+  <tr>
+    <th>Прізвище</th>
+    <th>Вид спорту</th>
+    <th>Дата народження</th>
+    <th>Результат</th>
+    <th>Розряд</th>
+    <th>Рекордсмен</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Лета</td>
+    <td>Плавання</td>
+    <td>02.05.2008</td>
+    <td>26.5 с</td>
+    <td>перший</td>
+    <td>так</td>
+  </tr>
+  <tr>
+    <td>Опришко</td>
+    <td>Баскетбол</td>
+    <td>01.01.2008</td>
+    <td>24 очки</td>
+    <td>третій</td>
+    <td>ні</td>
+  </tr>
+  <tr>
+    <td>Мессі</td>
+    <td>Теніс</td>
+    <td>02.02.1988</td>
+    <td>6:3,6:4 </td>
+    <td>другий</td>
+    <td>ні</td>
+  </tr>
+  <tr>
+    <td>Роналду</td>
+    <td>Єдиноборства</td>
+    <td>07.07.2007</td>
+    <td>перемога больовим</td>
+    <td>перший</td>
+    <td>так</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="add" class="section">
+<h2>Записатись</h2>
+<form class="form">
+  <label for="surname">Прізвище</label>
+  <input type="text" id="surname" name="surname" placeholder="Наприклад: Попенчук">
+
+  <label for="sport">Вид спорту</label>
+  <select id="sport" name="sport">
+    <option>Плавання</option>
+    <option>Баскетбол</option>
+    <option>Єдиноборства</option>
+    <option>Теніс</option>
+  </select>
+
+  <label for="birth">Дата народження</label>
+  <input type="date" id="birth" name="birth">
+
+  <label for="result">Результат</label>
+<input type="text" id="result" name="result" placeholder="Наприклад, 11.2 с">
+
+<label for="rank">Розряд</label>
+<select id="rank" name="rank">
+  <option>третій</option>
+  <option>другий</option>
+  <option>перший</option>
+</select>
+
+<label for="recordholder">Рекордсмен</label>
+<input type="checkbox" id="recordholder" name="recordholder">
+
+<button type="submit" class="btn">Додати</button>
+</form>
+</section>
+
+<section id="links" class="section">
+<h2>Корисні посилання</h2>
+<ul>
+  <li><a href="https://uk.wikipedia.org/wiki/Спорт" target="_blank">Спорт у Вікіпедії</a></li>
+  <li><a href="https://noc-ukr.org" target="_blank">Національний олімпійський комітет України</a></li>
+  <li><a href="https://www.youtube.com" target="_blank">Відеоогляди тренувань</a></li>
+</ul>
+</section>
+<section id="faq" class="section">
+  <h2>Часті запитання</h2>
+  <details>
+    <summary>З якого віку можна записатись у клуб?</summary>
+    <p>Більшість секцій приймають дітей <mark>від 6 років</mark>, деякі — з 10.</p>
+  </details>
+  <details>
+    <summary>Чи потрібна медична довідка?</summary>
+    <p>Так, довідка про стан здоров'я <strong>обов'язкова</strong> для всіх секцій.</p>
+  </details>
+</section>
+
+</div>
+</main>
+<footer class="footer">
+  <address>Кафедра БІТ, Львівська політехніка</address>
+  <p>Спортивний клуб, 2026</p>
+</footer>
+  </body>
+</html>
